@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amiri', serif;
+}
+.navbar,
+.hero-section,
+.about-section,
+.pillars-section,
+.events-section,
+.footer {
+    direction: rtl;
+}
+
+
+body {
+    background: url('images/background-body.jpeg') no-repeat center center/cover;
+    position: relative;
+    z-index: 0;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+body::before {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.logo {
+    width: 100px;
+    height: 60px;
+    max-width: 100%;
+}
+
+.navbar {
+    background-color: #f9f6ef;
+}
+.navbar-nav .nav-item {
+    transition: padding 0.3s ease;
+}
+
+
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url("images/masjid.gif") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 1.25rem;
+    margin-top: 0.75rem;
+    font-style: italic;
+}
+
+.hero-section .bismillah-image {
+    max-width: 250px;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+}
+
+.hero-section button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+.hero-section button:hover {
+    background-color: white;
+}
+
+.decorative-lines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 2rem auto 3rem;
+    gap: 1.5rem;
+}
+
+.decorative-line {
+    flex-grow: 1;
+    height: 3px;
+    background: linear-gradient(to var(--direction, right),
+            transparent,
+            #9f5224 15%,
+            #9f5224 85%,
+            transparent);
+}
+
+.decorative-line.left {
+    --direction: right;
+}
+
+.decorative-line.right {
+    --direction: left;
+}
+
+.organization-name {
+    color: #703a22;
+    font-size: 1.25rem;
+    font-weight: 500;
+    white-space: nowrap;
+    margin: 0 10px;
+}
+
+.audio-section {
+    padding: 1rem 0 2rem 0;
+    position: relative;
+    margin-top: -2px;
+}
+
+.audio-container {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.audio-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: center;
+    gap: 10px;
+    color: #333;
+}
+
+.audio-logo {
+    order: 2;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.surah-title {
+    order: 1;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.custom-audio-player {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(241, 241, 241, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.custom-audio-player audio {
+    display: none;
+}
+
+.custom-audio-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-audio-button svg {
+    width: 30px;
+    height: 30px;
+    fill: #703a22;
+}
+
+.custom-audio-progress {
+    flex-grow: 1;
+    height: 5px;
+    background-color: #c6b499;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.custom-audio-progress-filled {
+    height: 100%;
+    background-color: #703a22;
+    width: 0;
+    transition: width 0.2s;
+}
+
+.custom-audio-time {
+    font-size: 14px;
+    color: #333;
+    min-width: 45px;
+}
+
+.about-section {
+    padding: 4rem 0;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 3rem auto 0;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+.about-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.about-content {
+    padding-right: 2rem;
+}
+
+
+
+.about-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.about-description {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        padding-right: 0;
+    }
+}
+
+.organization-title {
+    color: #0d6efd;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.organization-description {
+    font-size: 1.5rem;
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-align: center;
+    direction: rtl;
+}
+
+.prayer-timings {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.prayer-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    height: 350px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.prayer-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.prayer-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.5em;
+    color: #444;
+}
+
+.prayer-card p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.prayer-card span {
+    color: #A26A15;
+    font-weight: bold;
+}
+
+.prayer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #fff7e6;
+}
+
+.prayer-card:hover h3 {
+    color: #A26A15;
+}
+
+.prayer-card:hover span {
+    color: #FF5733;
+}
+
+.pillars-section {
+    padding: 60px 0;
+}
+
+.pillars-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.pillar-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.pillar-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f3f3f3;
+}
+
+.pillar-icon {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.pillar-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.pillar-description {
+    font-size: 1em;
+    color: #555;
+}
+
+.events-section {
+    padding: 10px 0;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid #000;
+}
+
+.event-column {
+    width: 70%;
+}
+
+.dates-column {
+    width: 30%;
+    border-left: 2px solid #000 !important;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+    position: relative;
+    border: 2px solid #000;
+}
+
+.table .divider-row td {
+    border-bottom: 2px solid #000;
+}
+
+.table .event-content {
+    text-align: center;
+}
+
+.table .d-flex.align-items-center {
+    flex-direction: column;
+    align-items: center;
+}
+
+.table .btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #EDE7AD;
+    cursor: pointer;
+    border: none;
+    transition: opacity 0.3s ease;
+}
+.table .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.table .btn:hover {
+    opacity: 0.8;
+}
+
+.event-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.event-name {
+    margin-bottom: 10px;
+}
+
+.decorative-lines {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-link {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+.ticker-wrapper {
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: #ffe9db;
+}
+
+.ticker {
+    display: inline-block;
+    animation: ticker 16s linear infinite;
+}
+
+.ticker-item {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.ticker-logo {
+    width: 27px;
+    height: 27px;
+    margin-right: 8px;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.footer {
+    background-color: #6C5039;
+    color: #f5f3e7;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+
+#sourat {
+    direction: rtl;
+    text-align: right;
+}

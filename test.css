@@ -1,0 +1,138 @@
+.courses-library {
+    padding: 4rem 0;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.course-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.course-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.course-card:hover .course-image img {
+    transform: scale(1.1);
+}
+
+.course-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(135, 101, 21, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.course-card:hover .course-overlay {
+    opacity: 1;
+}
+
+
+
+.course-content {
+    padding: 1.5rem;
+}
+
+.course-content h3 {
+    color: #876515;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.course-description {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.course-details {
+    display: flex;
+    justify-content: space-between;
+    color: #876515;
+    font-size: 0.9rem;
+}
+
+.course-details span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .courses-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .course-card:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.decorative-lines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 2rem auto 3rem;
+    gap: 1.5rem;
+}
+
+.decorative-line {
+    flex-grow: 1;
+    height: 3px;
+    background: linear-gradient(to var(--direction, right),
+            transparent,
+            #9f5224 15%,
+            #9f5224 85%,
+            transparent);
+}
+
+.decorative-line.left {
+    --direction: right;
+}
+
+.decorative-line.right {
+    --direction: left;
+}
+
+.organization-name {
+    color: #703a22;
+    font-size: 1.25rem;
+    font-weight: 500;
+    white-space: nowrap;
+    margin: 0 10px;
+}

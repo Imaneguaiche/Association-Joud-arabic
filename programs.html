@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>جمعية جود</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="programs.css" />
+    <link rel="stylesheet" href="test.css" />
+    <link rel="icon" href="images/logo1.png" type="icon" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand me-3" href="index.html">
+          <img src="images/logo.png" class="logo" alt="Logo" id="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto spaced-nav">
+            <li class="nav-item px-3">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item dropdown px-3">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >صفحات</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="pages.html">من نحن</a></li>
+                <li>
+                  <a class="dropdown-item" href="pages.html#our-services"
+                    >خدماتنا</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="programs.html">برامجنا</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="events.html">الفعاليات</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="contact.html">اتصل بنا</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="events-hero-section">
+      <div class="events-hero-overlay">
+        <div class="content">
+          <h1>برامجنا</h1>
+          <a href="#books">
+            <button>تعرف أكثر</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="programs-header" id="books">
+      <div class="decorative-lines">
+        <div class="decorative-line left"></div>
+        <span class="organization-name">مكتبتنا الإسلامية</span>
+        <div class="decorative-line right"></div>
+      </div>
+    </div>
+    <section class="books-section">
+      <div class="container">
+        <div class="shelf-container">
+          <div class="books-row">
+            <div class="book" data-pdf="pdfs/التفسير الميسر.pdf">
+              <img src="images/tafsser moyassar.jpg" alt="التفسير الميسر" />
+              <div class="book-title">التفسير الميسر</div>
+            </div>
+            <div class="book" data-pdf="pdfs/ar_Tuhfat_Alatfal1.pdf">
+              <img src="images/tohfat atfal.png" alt="تحفة الأطفال" />
+              <div class="book-title">تحفة الأطفال</div>
+            </div>
+          </div>
+          <img
+            src="images/wall-bookshelf.png"
+            alt="Wooden Shelf"
+            class="wooden-shelf"
+          />
+        </div>
+
+        <div class="shelf-container">
+          <div class="books-row">
+            <div class="book" data-pdf="pdfs/الرحيق المختوم.pdf">
+              <img src="images/rahiq al makhtom.png" alt="الرحيق المختوم" />
+              <div class="book-title">الرحيق المختوم</div>
+            </div>
+            <div class="book" data-pdf="pdfs/رجال حول الرسول.pdf">
+              <img src="images/rijal hawla rassol.jpg" alt="رجال حول الرسول" />
+              <div class="book-title">رجال حول الرسول</div>
+            </div>
+          </div>
+          <img
+            src="images/wall-bookshelf.png"
+            alt="Wooden Shelf"
+            class="wooden-shelf"
+          />
+        </div>
+
+        <div class="shelf-container">
+          <div class="books-row">
+            <div class="book" data-pdf="pdfs/نساء حول الرسول .pdf">
+              <img src="images/nisa2 hawla rassol.png" alt="نساء حول الرسول" />
+              <div class="book-title">نساء حول الرسول</div>
+            </div>
+            <div class="book" data-pdf="pdfs/منهاج المسلم.pdf">
+              <img src="images/minhaj moslim.jpeg" alt="منهاج المسلم" />
+              <div class="book-title">منهاج المسلم</div>
+            </div>
+          </div>
+          <img
+            src="images/wall-bookshelf.png"
+            alt="Wooden Shelf"
+            class="wooden-shelf"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="courses-library">
+      <div class="container">
+        <div class="decorative-lines">
+          <div class="decorative-line left"></div>
+          <span class="organization-name">منصة الدورات</span>
+          <div class="decorative-line right"></div>
+        </div>
+
+        <div class="courses-grid">
+          <div class="course-card">
+            <div class="course-image">
+              <img src="images/islamic quran.png" alt="Islamic Studies" />
+            </div>
+            <div class="course-content">
+              <h3>الدراسات الإسلامية</h3>
+              <p class="course-description">
+                دراسة شاملة لمبادئ الإسلام وممارساته.
+              </p>
+              <div class="course-details">
+                <span><i class="fas fa-clock"></i> 12 أسبوعًا</span>
+                <span><i class="fas fa-book"></i> 24 درسًا</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-image">
+              <img src="images/quran tajwed.jpeg" alt="Quran Tajweed" />
+            </div>
+            <div class="course-content">
+              <h3>تجويد القرآن</h3>
+              <p class="course-description">
+                إتقان فن تلاوة القرآن مع النطق الصحيح.
+              </p>
+              <div class="course-details">
+                <span><i class="fas fa-clock"></i> 8 أسبوعًا</span>
+                <span><i class="fas fa-book"></i> 16 درسًا</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-image">
+              <img src="images/arabic language.png" alt="Arabic Language" />
+            </div>
+            <div class="course-content">
+              <h3>اللغة العربية</h3>
+              <p class="course-description">
+                تعلم اللغة العربية الفصحى من الأساسيات إلى المستوى المتقدم.
+              </p>
+              <div class="course-details">
+                <span><i class="fas fa-clock"></i> 16 أسبوعًا</span>
+                <span><i class="fas fa-book"></i> 32 درسًا</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-image">
+              <img src="images/islamic history.jpg" alt="Islamic History" />
+            </div>
+            <div class="course-content">
+              <h3>التاريخ الإسلامي</h3>
+              <p class="course-description">
+                استكشف التراث الغني وتاريخ الحضارة الإسلامية.
+              </p>
+              <div class="course-details">
+                <span><i class="fas fa-clock"></i> 10 أسبوعًا</span>
+                <span><i class="fas fa-book"></i> 20 درسًا</span>
+              </div>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-image">
+              <img src="images/fiqh studies.png" alt="Fiqh Studies" />
+            </div>
+            <div class="course-content">
+              <h3>الفقه الإسلامي</h3>
+              <p class="course-description">
+                دراسة تفصيلية لأحكام الشريعة الإسلامية.
+              </p>
+              <div class="course-details">
+                <span><i class="fas fa-clock"></i> 14 أسبوعًا</span>
+                <span><i class="fas fa-book"></i> 28 درسًا</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-image">
+              <img
+                src="images/seerah prephet.png"
+                alt="Seerah of Prophet Muhammad"
+              />
+            </div>
+            <div class="course-content">
+              <h3>سيرة النبي محمد</h3>
+              <p class="course-description">
+                تعمق في حياة وسيرة النبي محمد صلى الله عليه وسلم.
+              </p>
+              <div class="course-details">
+                <span><i class="fas fa-clock"></i> 10 أسبوعًا</span>
+                <span><i class="fas fa-book"></i> 20 درسًا</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker-wrapper">
+      <div class="ticker">
+        <div class="ticker-item">
+          <img src="images/logo1.png" alt="Logo" class="ticker-logo" />
+          " اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا،
+          وَعَمَلًا مُتَقَبَّلًا "
+        </div>
+        <div class="ticker-item">
+          <img src="images/logo1.png" alt="Logo" class="ticker-logo" />
+          " لَّا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ
+          الظَّالِمِينََ "
+        </div>
+        <div class="ticker-item">
+          <img src="images/logo1.png" alt="Logo" class="ticker-logo" />
+          " رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِن ذُرِّيَّتِي ۚ رَبَّنَا
+          وَتَقَبَّلْ دُعَاءِ "
+        </div>
+        <div class="ticker-item">
+          <img src="images/logo1.png" alt="Logo" class="ticker-logo" />
+          " فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ أَنتَ وَلِيِّي فِي الدُّنْيَا
+          وَالْآخِرَةِ ۖ تَوَفَّنِي مُسْلِمًا وَأَلْحِقْنِي بِالصَّالِحِينَ "
+        </div>
+        <div class="ticker-item">
+          <img src="images/logo1.png" alt="Logo" class="ticker-logo" />
+          " وَقُل رَّبِّ أَدْخِلْنِى مُدْخَلَ صِدْقٍۢ وَأَخْرِجْنِى مُخْرَجَ
+          صِدْقٍۢ وَٱجْعَل لِّى مِن لَّدُنكَ سُلْطَٰنًا نَّصِيرًا "
+        </div>
+        <div class="ticker-item">
+          <img src="images/logo1.png" alt="Logo" class="ticker-logo" />
+          " اللَّهُمَّ إِنَّا نَعُوذُ بِكَ مِنْ أَنْ نُشْرِكَ بِكَ شَيْئًا
+          نَعْلَمُهُ ، وَنَسْتَغْفِرُكَ لِمَا لَا نَعْلَمُهُ "
+        </div>
+        <div class="ticker-item">
+          <img src="images/logo1.png" alt="Logo" class="ticker-logo" />
+          " وَذَكِّرْ فَإِنَّ الذِّكْرَى تَنْفَعُ الْمُؤْمِنِينَ "
+        </div>
+        <div class="ticker-item">
+          <img src="images/logo1.png" alt="Logo" class="ticker-logo" />
+          " وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ أُجِيبُ دَعْوَةَ
+          الدَّاعِ إِذَا دَعَانِ فَلْيَسْتَجِيبُواْ لِي وَلْيُؤْمِنُواْ بِي
+          لَعَلَّهُمْ يَرْشُدُونَ "
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <p>جمعية جود © حقوق النشر 2025 - جميع الحقوق محفوظة</p>
+      </div>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.querySelectorAll(".book").forEach((book) => {
+        book.addEventListener("click", function () {
+          const pdfUrl = book.getAttribute("data-pdf");
+          const link = document.createElement("a");
+          link.href = pdfUrl;
+          link.download = pdfUrl.split("/").pop();
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+      });
+    </script>
+  </body>
+</html>
